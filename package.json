@@ -1,0 +1,20 @@
+{
+  "name": "azure-platform",
+  "version": "1.0.0",
+  "description": "A simple web server that serves an HTML page and uses Socket.IO for real-time communication with connected clients (web browsers). The Azure IoT device is simulated using the Azure IoT Device SDK for Node.js, and it sends messages to the server, which are then broadcasted to all connected clients.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/python-arch/Simple-Azure-Listener-Web-Server.git"
+  },
+  "author": "Abdelrahman El sayed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/python-arch/Simple-Azure-Listener-Web-Server/issues"
+  },
+  "homepage": "https://github.com/python-arch/Simple-Azure-Listener-Web-Server#readme"
+}
