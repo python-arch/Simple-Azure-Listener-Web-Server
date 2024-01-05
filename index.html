@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azure IoT Hub Messages</title>
+</head>
+<body>
+  <h1>Received Messages</h1>
+  <ul id="messages"></ul>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+
+    socket.on('message', (message) => {
+      const messagesList = document.getElementById('messages');
+      const listItem = document.createElement('li');
+      listItem.textContent = message;
+      messagesList.appendChild(listItem);
+    });
+  </script>
+</body>
+</html>
